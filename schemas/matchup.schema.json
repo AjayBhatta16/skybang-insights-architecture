@@ -43,8 +43,7 @@
         "homeTeamId",
         "awayTeamCode",
         "homeTeamCode",
-        "projectedWinner",
-        "projectionCorrect"
+        "projectedWinner"
     ],
     "$example": {
         "matchupId": "2026_01_NYG_DAL",

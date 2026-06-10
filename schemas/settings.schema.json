@@ -2,15 +2,21 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
-        "weekId": {
+        "id": {
+            "type": "string",
+            "description": "The unique identifier for the settings (e.g. 'currentWeek')"
+        },
+        "currentWeekId": {
             "type": "string",
             "description": "The current week of the NFL season"
         }
     },
     "required": [
-        "weekId"
+        "id",
+        "currentWeekId"
     ],
     "$example": {
-        "weekId": "2026_01"
+        "id": "currentWeek",
+        "currentWeekId": "2026_01"
     }
 }

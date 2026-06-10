@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "matchupId": {
+            "type": "string",
+            "description": "The unique identifier for the matchup",
+            "$comment": "weekId_awayTeamCode_homeTeamCode, e.g. 2026_01_NYG_DAL"
+        },
+        "weekId": {
+            "type": "string",
+            "description": "The week of the NFL season for this matchup"
+        },
+        "awayTeamId": {
+            "type": "string",
+            "description": "The unique identifier for the away team"
+        },
+        "homeTeamId": {
+            "type": "string",
+            "description": "The unique identifier for the home team"
+        },
+        "awayTeamCode": {
+            "type": "string",
+            "description": "The abbreviation for the away team"
+        },
+        "homeTeamCode": {
+            "type": "string",
+            "description": "The abbreviation for the home team"
+        },
+        "projectedWinner": {
+            "type": "string",
+            "description": "The projected winner of the matchup (either 'home' or 'away')"
+        },
+        "projectionCorrect": {
+            "type": "boolean",
+            "description": "Whether the projection for the matchup was correct"
+        }
+    },
+    "required": [
+        "matchupId",
+        "weekId",
+        "awayTeamId",
+        "homeTeamId",
+        "awayTeamCode",
+        "homeTeamCode",
+        "projectedWinner",
+        "projectionCorrect"
+    ],
+    "$example": {
+        "matchupId": "2026_01_NYG_DAL",
+        "weekId": "2026_01",
+        "awayTeamId": "123e4567-e89b-12d3-a456-426614174000",
+        "homeTeamId": "123e4567-e89b-12d3-a456-426614174001",
+        "awayTeamCode": "NYG",
+        "homeTeamCode": "DAL",
+        "projectedWinner": "home",
+        "projectionCorrect": true
+    }
+}

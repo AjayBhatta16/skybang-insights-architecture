@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "teamId": {
+            "type": "string",
+            "description": "The unique GUID identifier for the team"
+        },
+        "city": {
+            "type": "string",
+            "description": "The city the team is based in"
+        },
+        "name": {
+            "type": "string",
+            "description": "The name of the team"
+        },
+        "teamCode": {
+            "type": "string",
+            "description": "The team's abbreviation"
+        },
+        "color1": {
+            "type": "string",
+            "description": "The team's primary color in hex format"
+        },
+        "color2": {
+            "type": "string",
+            "description": "The team's secondary color in hex format"
+        }
+    },
+    "required": [
+        "teamId",
+        "city",
+        "name",
+        "teamCode"
+    ],
+    "$example": {
+        "teamId": "123e4567-e89b-12d3-a456-426614174000",
+        "city": "New York",
+        "name": "Giants",
+        "teamCode": "NYG",
+        "color1": "#0B2265",
+        "color2": "#A71930"
+    }
+}

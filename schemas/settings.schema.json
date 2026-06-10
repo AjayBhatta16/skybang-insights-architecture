@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "weekId": {
+            "type": "string",
+            "description": "The current week of the NFL season"
+        }
+    },
+    "required": [
+        "weekId"
+    ],
+    "$example": {
+        "weekId": "2026_01"
+    }
+}

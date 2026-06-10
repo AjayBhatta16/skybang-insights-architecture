@@ -4,7 +4,7 @@
     "properties": {
         "id": {
             "type": "string",
-            "description": "The unique identifier for the settings (e.g. 'currentWeek')"
+            "description": "The unique GUID identifier for the settings"
         },
         "currentWeekId": {
             "type": "string",
@@ -16,7 +16,7 @@
         "currentWeekId"
     ],
     "$example": {
-        "id": "currentWeek",
+        "id": "123e4567-e89b-12d3-a456-426614174000",
         "currentWeekId": "2026_01"
     }
 }
